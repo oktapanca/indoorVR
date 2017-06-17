@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Indoor</title>
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene>
+        <a-assets>
+            <a-asset-item id="man" src="man/man.dae"></a-asset-item>
+            <img id="indoor" src="/img/Indoor Background.jpg">
+            <img id="box" src="/img/box.jpg" crossorigin="anonymous">
+            <img id="ball" src="/img/ball.png" crossorigin="anonymous">
+            <img id="carpet" src="/img/carpet.jpg" crossorigin="anonymous">
+        </a-assets>
+        <a-entity id="model" position="2 -3 -5">
+            <a-collada-model position="-.35 0 .55" rotation="0 -10 0" scale="2 2 2" src="#man"></a-collada-model>
+            <a-sphere position="-1 1.5 .5" radius="0.2" src="#ball"></a-sphere>
+        </a-entity>
+        <a-sky src="#indoor"></a-sky>
+        <a-plane rotation="-90 15 0" position="1 -10 -1" width="15" height="15" depth="2" src="#carpet"></a-plane>
+        <a-box width="2" height="2" depth="2" position="10 -5 -7" src="#box">
+        </a-box>
+        <!--         <a-camera>
+            <a-cursor></a-cursor>
+        </a-camera> -->
+    </a-scene>
+</body>
+
+</html>
