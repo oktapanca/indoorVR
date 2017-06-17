@@ -8,8 +8,8 @@
 
 ## Langkah Instal
 1. Instal Node JS
-2. Download zip file github https://github.com/oktapanca/indoorVR
-3. Extract zip file (extract here menggunakan winrar)
+2. Unduh zip file github di https://github.com/oktapanca/indoorVR
+3. Extract file menggunakan winrar (extract here)
 4. Buka command promt (cmd), dan masuk ke directory hasil extract zip file 
 5. Instal npm menggunakan command "npm install && npm start"
 6. Jika prosess instal sudah selesai, bisa di jalankan dari localhost port 3000
